@@ -9,32 +9,32 @@
 int main() {
 
     // Declarando vasiaveis Carta 1
-    char estadoC1; // letra de 'A' a 'H'
-    char codigoC1[3]; // {estado} + numero de 01 a 04
-    char nomeCidadeC1[60];
-    unsigned long int populacaoC1;
-    float areaC1; // em km²
-    float PIBC1;
-    int pontosTuristicosC1;
+    char estadoC1 = 'A'; // letra de 'A' a 'H'
+    char codigoC1[3] = "01"; // {estado} + numero de 01 a 04
+    char nomeCidadeC1[60] = "São Paulo";
+    unsigned long int populacaoC1 = 12325000;
+    float areaC1 = 1521.11; // em km²
+    float PIBC1 = 699.28;
+    int pontosTuristicosC1 = 50;
 
     // Declarando vasiaveis Carta 2
-    char estadoC2; // letra de 'A' a 'H'
-    char codigoC2[3]; // {estado} + numero de 01 a 04
-    char nomeCidadeC2[60];
-    unsigned long int populacaoC2;
-    float areaC2; // em km²
-    float PIBC2;
-    int pontosTuristicosC2;
+    char estadoC2 = 'A'; // letra de 'A' a 'H'
+    char codigoC2[3] = "02"; // {estado} + numero de 01 a 04
+    char nomeCidadeC2[60] = "Rio de Janeiro";
+    unsigned long int populacaoC2 = 6748000;
+    float areaC2 = 1200.25; // em km²
+    float PIBC2 = 300.5;
+    int pontosTuristicosC2 = 30;
 
     //Banner
     printf("+-----------------------------------+\n");
     printf("|                                   |\n");
-    printf("|           Super Trunfo            |\n");
+    printf("|       Super Trunfo (teste)        |\n");
     printf("|                                   |\n");
     printf("+-----------------------------------+\n");
 
     // Cadastro carta 1
-    printf("\nPor favor insira as informações da Carta 1\n");
+    /*printf("\nPor favor insira as informações da Carta 1\n");
     
     printf("Digite o estado da  (uma letra de 'A' a 'H'):\n");
     scanf(" %c", &estadoC1);
@@ -86,7 +86,7 @@ int main() {
     scanf("%f", &PIBC2);
 
     printf("Digite o número de pontos turísticos da cidade:\n");
-    scanf("%i", &pontosTuristicosC2);
+    scanf("%i", &pontosTuristicosC2);*/
 
     // Calculando desnsidaed,PIB per capita e super poder
     float desidadePopulacionalC1 = (float) populacaoC1 / areaC1; // hab/km²
