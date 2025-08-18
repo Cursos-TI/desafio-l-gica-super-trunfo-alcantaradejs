@@ -136,8 +136,8 @@ int main() {
 
         case 2: // comparacao area
             printf("[ Área ]\n");
-            printf("Carta 1 - %s: %lu habitantes\n", nomePaisC1, areaC1);
-            printf("Carta 2 - %s: %lu habitantes\n", nomePaisC2, areaC2);
+            printf("Carta 1 - %s: %.2f Km²\n", nomePaisC1, areaC1);
+            printf("Carta 2 - %s: %.2f Km²\n", nomePaisC2, areaC2);
             
             if (areaC1 > areaC2) {
                 printf("Resultado: Carta 1 (%s) Venceu!\n", nomePaisC1);
@@ -150,8 +150,8 @@ int main() {
 
         case 3: // comparacao PIB
             printf("[ PIB ]\n");
-            printf("Carta 1 - %s: %lu habitantes\n", nomePaisC1, PIBC1);
-            printf("Carta 2 - %s: %lu habitantes\n", nomePaisC2, PIBC2);
+            printf("Carta 1 - %s: %.2f bilhões de Reais\n", nomePaisC1, PIBC1);
+            printf("Carta 2 - %s: %.2f bilhões de Reais\n", nomePaisC2, PIBC2);
             
             if (PIBC1 > PIBC2) {
                 printf("Resultado: Carta 1 (%s) Venceu!\n", nomePaisC1);
@@ -164,8 +164,8 @@ int main() {
 
         case 4: // comparacao pontosTuristicos
             printf("[ Pontos Turisticos ]\n");
-            printf("Carta 1 - %s: %lu habitantes\n", nomePaisC1, pontosTuristicosC1);
-            printf("Carta 2 - %s: %lu habitantes\n", nomePaisC2, pontosTuristicosC2);
+            printf("Carta 1 - %s: %d\n", nomePaisC1, pontosTuristicosC1);
+            printf("Carta 2 - %s: %d\n", nomePaisC2, pontosTuristicosC2);
             
             if (pontosTuristicosC1 > pontosTuristicosC2) {
                 printf("Resultado: Carta 1 (%s) Venceu!\n", nomePaisC1);
@@ -178,8 +178,8 @@ int main() {
 
         case 5: // comparacao densidadePopulacional
             printf("[ Densidade Demografica ]\n");
-            printf("Carta 1 - %s: %lu habitantes\n", nomePaisC1, densidadePopulacionalC1);
-            printf("Carta 2 - %s: %lu habitantes\n", nomePaisC2, densidadePopulacionalC2);
+            printf("Carta 1 - %s: %.2f hab/Km²\n", nomePaisC1, densidadePopulacionalC1);
+            printf("Carta 2 - %s: %.2f hab/Km²\n", nomePaisC2, densidadePopulacionalC2);
             
             if (densidadePopulacionalC1 < densidadePopulacionalC2) {
                 printf("Resultado: Carta 1 (%s) Venceu!\n", nomePaisC1);
