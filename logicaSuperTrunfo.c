@@ -7,6 +7,7 @@
 // Siga os comentários para implementar cada parte do desafio.
 
 int main() {
+    char c; // limpar buffer
 
     // Declarando vasiaveis Carta 1
     char estadoC1; // letra de 'A' a 'H'
@@ -42,7 +43,7 @@ int main() {
     printf("Digite o codigo da carta (de 01 a 04):\n");
     scanf("%s", codigoC1);
 
-    scanf("%c"); // remove \n do buffer
+    scanf("%c", &c); // remove \n do buffer
     printf("Digite o nome da cidade:\n");
     fgets(nomeCidadeC1, 60, stdin);
     nomeCidadeC1[strcspn(nomeCidadeC1, "\n")] = 0; // remove o \n da string
@@ -71,7 +72,7 @@ int main() {
     printf("Digite o codigo da carta (de 01 a 04):\n");
     scanf("%s", codigoC2);
 
-    scanf("%c"); // remove \n do buffer
+    scanf("%c", &c); // remove \n do buffer
     printf("Digite o nome da cidade:\n");
     fgets(nomeCidadeC2, 60, stdin);
     nomeCidadeC2[strcspn(nomeCidadeC2, "\n")] = 0; // remove o \n da string
