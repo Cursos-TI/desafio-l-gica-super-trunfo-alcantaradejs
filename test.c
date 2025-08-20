@@ -314,9 +314,7 @@ int main() {
     // Vencedor final
     if (resultado1 == 4 || resultado2 == 4) {
         printf("Não a um vencedor, pois temos pelomenos 1 atributo invalido :(\n");
-    } else {
-        printf("[TEST]\nResultado1: %d\nResultado2: %d\n\n", resultado1, resultado2); // TEST remover apos testes
-        
+    } else {        
         int vitoriasC1 = 0, vitoriasC2 = 0;
         int vencedorFinal; // 1 - carta 1 venceu | 2 - carta 2 vebceu | 3 - empate
 
