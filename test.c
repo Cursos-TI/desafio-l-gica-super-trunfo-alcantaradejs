@@ -13,10 +13,10 @@ int main() {
     // char estadoC1 = 'A'; // letra de 'A' a 'H'
     // char codigoC1[3] = "01"; // {estado} + numero de 01 a 04
     // char nomeCidadeC1[60] = "São Paulo";
-    unsigned long int populacaoC1 = 6748000;
+    unsigned long int populacaoC1 = 12325000;
     float areaC1 = 1521.11; // em km²
     float PIBC1 = 699.28;
-    int pontosTuristicosC1 = 50;
+    int pontosTuristicosC1 = 30;
 
     // Declarando vasiaveis Carta 2
     char nomePaisC2[60] = "Reino Unido";
@@ -315,8 +315,23 @@ int main() {
     if (resultado1 == 4 || resultado2 == 4) {
         printf("Não a um vencedor, pois temos pelomenos 1 atributo invalido :(\n");
     } else {
-        printf("[TEST] Resultado1: %d\nResultado2: %d\n\n", resultado1, resultado2); // TEST remover apos testes
-        // ... logica do vencedor final ... 
+        printf("[TEST]\nResultado1: %d\nResultado2: %d\n\n", resultado1, resultado2); // TEST remover apos testes
+        
+        int vitoriasC1 = 0, vitoriasC2 = 0;
+        int vencedorFinal; // 1 - carta 1 venceu | 2 - carta 2 vebceu | 3 - empate
+
+        resultado1 == 1 ? vitoriasC1++ : resultado1 == 2 ? vitoriasC2++ : 0; // o 0 simbiliza que nada vai ser feito
+        resultado2 == 1 ? vitoriasC1++ : resultado2 == 2 ? vitoriasC2++ : 0; // o 0 simbiliza que nada vai ser feito
+
+        vencedorFinal = vitoriasC1 > vitoriasC2 ? 1 : vitoriasC1 < vitoriasC2? 2 : 3;
+
+        printf("Carta 1(%s) %d X %d Carta 2(%s)\n", nomePaisC1, vitoriasC1, vitoriasC2, nomePaisC2);
+        
+        if (vencedorFinal == 3) {
+            printf("Tivemos um Empate\n");
+        } else {
+            printf("Carta%d(%s) Venceu!!!", vencedorFinal, vencedorFinal == 1 ? nomePaisC1 : nomePaisC2);
+        }
     }
 
     // rodape
