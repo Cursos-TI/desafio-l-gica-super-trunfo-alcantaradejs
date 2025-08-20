@@ -7,27 +7,42 @@
 // Siga os comentários para implementar cada parte do desafio.
 
 int main() {
-    char c; // limpar buffer
+    // char c; // limpar buffer
 
+    // // Declarando vasiaveis Carta 1
+    // char nomePaisC1[60]; 
+    // //char estadoC1; // letra de 'A' a 'H'
+    // //char codigoC1[3]; // {estado} + numero de 01 a 04
+    // //char nomeCidadeC1[60];
+    // unsigned long int populacaoC1;
+    // float areaC1; // em km²
+    // float PIBC1;
+    // int pontosTuristicosC1;
+
+    // // Declarando vasiaveis Carta 2
+    // char nomePaisC2[60]; 
+    // // char estadoC2; // letra de 'A' a 'H'
+    // // char codigoC2[3]; // {estado} + numero de 01 a 04
+    // // char nomeCidadeC2[60];
+    // unsigned long int populacaoC2;
+    // float areaC2; // em km²
+    // float PIBC2;
+    // int pontosTuristicosC2;
+
+    // dados pre-preenchidos ( Como pedido no desafio )
     // Declarando vasiaveis Carta 1
-    char nomePaisC1[60]; 
-    //char estadoC1; // letra de 'A' a 'H'
-    //char codigoC1[3]; // {estado} + numero de 01 a 04
-    //char nomeCidadeC1[60];
-    unsigned long int populacaoC1;
-    float areaC1; // em km²
-    float PIBC1;
-    int pontosTuristicosC1;
+    char nomePaisC1[60] = "Brasil";
+    unsigned long int populacaoC1 = 12325000;
+    float areaC1 = 1521.11; // em km²
+    float PIBC1 = 699.28;
+    int pontosTuristicosC1 = 30;
 
     // Declarando vasiaveis Carta 2
-    char nomePaisC2[60]; 
-    // char estadoC2; // letra de 'A' a 'H'
-    // char codigoC2[3]; // {estado} + numero de 01 a 04
-    // char nomeCidadeC2[60];
-    unsigned long int populacaoC2;
-    float areaC2; // em km²
-    float PIBC2;
-    int pontosTuristicosC2;
+    char nomePaisC2[60] = "Reino Unido";
+    unsigned long int populacaoC2 = 6748000;
+    float areaC2 = 1200.25; // em km²
+    float PIBC2 = 300.5;
+    int pontosTuristicosC2 = 30;
 
     //Banner
     printf("+-----------------------------------+\n");
@@ -36,69 +51,71 @@ int main() {
     printf("|                                   |\n");
     printf("+-----------------------------------+\n");
 
-    // Cadastro carta 1
-    printf("\nPor favor insira as informações da Carta 1\n");
-    
-    // printf("Digite o estado da  (uma letra de 'A' a 'H'):\n");
-    // scanf(" %c", &estadoC1);
+    printf("\n[+] Cartas pre-Cadastradas\n");
 
-    // printf("Digite o codigo da carta (de 01 a 04):\n");
-    // scanf("%s", codigoC1);
+    // // Cadastro carta 1
+    // printf("\nPor favor insira as informações da Carta 1\n");
+    
+    // // printf("Digite o estado da  (uma letra de 'A' a 'H'):\n");
+    // // scanf(" %c", &estadoC1);
+
+    // // printf("Digite o codigo da carta (de 01 a 04):\n");
+    // // scanf("%s", codigoC1);
+
+    // // scanf("%c", &c); // remove \n do buffer
+    // // printf("Digite o nome da cidade:\n");
+    // // fgets(nomeCidadeC1, 60, stdin);
+    // // nomeCidadeC1[strcspn(nomeCidadeC1, "\n")] = 0; // remove o \n da string
+
+    // printf("Digite o nome do País:\n");
+    // fgets(nomePaisC1, 60, stdin);
+    // nomePaisC1[strcspn(nomePaisC1, "\n")] = 0; // remove o \n da string
+
+    // printf("Digite o numero de habitantes da País:\n");
+    // scanf("%i", &populacaoC1);
+
+    // printf("Digite a área da País em km² (não digite 'Km²'):\n");
+    // scanf("%f", &areaC1);
+
+    // printf("Digite o PIB da País (em bilhões de reais):\n");
+    // scanf("%f", &PIBC1);
+
+    // printf("Digite o número de pontos turísticos da País:\n");
+    // scanf("%i", &pontosTuristicosC1);
+
+
+    // printf("\n-------------------------------------------------------------------\n"); // divisor
+
+    // // Cadastro carta 2
+    // printf("\nPor favor insira as informações da Carta 2\n");
+    
+    // // printf("Digite o codigo da carta (uma letra de 'A' a 'H'):\n");
+    // // scanf(" %c", &estadoC2);
+
+    // // printf("Digite o codigo da carta (de 01 a 04):\n");
+    // // scanf("%s", codigoC2);
+
+    // // scanf("%c", &c); // remove \n do buffer
+    // // printf("Digite o nome da cidade:\n");
+    // // fgets(nomeCidadeC2, 60, stdin);
+    // // nomeCidadeC2[strcspn(nomeCidadeC2, "\n")] = 0; // remove o \n da string
 
     // scanf("%c", &c); // remove \n do buffer
-    // printf("Digite o nome da cidade:\n");
-    // fgets(nomeCidadeC1, 60, stdin);
-    // nomeCidadeC1[strcspn(nomeCidadeC1, "\n")] = 0; // remove o \n da string
+    // printf("Digite o nome do País:\n");
+    // fgets(nomePaisC2, 60, stdin);
+    // nomePaisC2[strcspn(nomePaisC2, "\n")] = 0; // 
 
-    printf("Digite o nome do País:\n");
-    fgets(nomePaisC1, 60, stdin);
-    nomePaisC1[strcspn(nomePaisC1, "\n")] = 0; // remove o \n da string
+    // printf("Digite o numero de habitantes da País:\n");
+    // scanf("%i", &populacaoC2);
 
-    printf("Digite o numero de habitantes da País:\n");
-    scanf("%i", &populacaoC1);
+    // printf("Digite a área da País em km² (não digite 'Km²'):\n");
+    // scanf("%f", &areaC2);
 
-    printf("Digite a área da País em km² (não digite 'Km²'):\n");
-    scanf("%f", &areaC1);
+    // printf("Digite o PIB da País (em bilhões de reais):\n");
+    // scanf("%f", &PIBC2);
 
-    printf("Digite o PIB da País (em bilhões de reais):\n");
-    scanf("%f", &PIBC1);
-
-    printf("Digite o número de pontos turísticos da País:\n");
-    scanf("%i", &pontosTuristicosC1);
-
-
-    printf("\n-------------------------------------------------------------------\n"); // divisor
-
-    // Cadastro carta 2
-    printf("\nPor favor insira as informações da Carta 2\n");
-    
-    // printf("Digite o codigo da carta (uma letra de 'A' a 'H'):\n");
-    // scanf(" %c", &estadoC2);
-
-    // printf("Digite o codigo da carta (de 01 a 04):\n");
-    // scanf("%s", codigoC2);
-
-    // scanf("%c", &c); // remove \n do buffer
-    // printf("Digite o nome da cidade:\n");
-    // fgets(nomeCidadeC2, 60, stdin);
-    // nomeCidadeC2[strcspn(nomeCidadeC2, "\n")] = 0; // remove o \n da string
-
-    scanf("%c", &c); // remove \n do buffer
-    printf("Digite o nome do País:\n");
-    fgets(nomePaisC2, 60, stdin);
-    nomePaisC2[strcspn(nomePaisC2, "\n")] = 0; // 
-
-    printf("Digite o numero de habitantes da País:\n");
-    scanf("%i", &populacaoC2);
-
-    printf("Digite a área da País em km² (não digite 'Km²'):\n");
-    scanf("%f", &areaC2);
-
-    printf("Digite o PIB da País (em bilhões de reais):\n");
-    scanf("%f", &PIBC2);
-
-    printf("Digite o número de pontos turísticos da País:\n");
-    scanf("%i", &pontosTuristicosC2);
+    // printf("Digite o número de pontos turísticos da País:\n");
+    // scanf("%i", &pontosTuristicosC2);
 
     // Calculando desnsidaed,PIB per capita e super poder
     float densidadePopulacionalC1 = (float) populacaoC1 / areaC1; // hab/km²
